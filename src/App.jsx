@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import State from "../src/pages/learn-useState/index";
 import Effect from "../src/pages/learn-useEffect/index";
 import Context from "../src/pages/learn-useContext/index";
+import Tugas from "../src/pages/tugas/index";
 
 function App() {
 	return (
@@ -19,6 +20,9 @@ function App() {
 						<li>
 							<Link to="/use-context">Use Context</Link>
 						</li>
+						<li>
+							<Link to="/tugas">Tugas</Link>
+						</li>
 					</ul>
 				</nav>
 				<Routes>
@@ -26,6 +30,7 @@ function App() {
 					<Route path="/use-state" exact element={<State />}></Route>
 					<Route path="/use-effect" exact element={<Effect />}></Route>
 					<Route path="/use-context" exact element={<Context />}></Route>
+					<Route path="/tugas" exact element={<Tugas />}></Route>
 				</Routes>
 			</Router>
 		</>
